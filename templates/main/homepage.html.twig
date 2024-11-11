@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ asset('build/tailwind.css') }}" rel="stylesheet"> {# Es necesario hacer compilacion de esa ruta, en ese caso fue npx tailwindcss -i ./assets/styles/tailwind.css -o ./public/build/tailwind.css --minify #}
+    <title>Inicio</title>
+</head>
+<body>
 <h1> HOLAAAAAAAAAAAAAA </h1>
 
 <div>
@@ -8,9 +17,14 @@
         <h1> ADIOOS </h1>
 
     {% endif %}
+    <div class="bg-blue-500 text-black p-4 border-r-amber-50" >
+        Este texto tiene el fondo azul y texto blanco de Tailwind.
+    </div>
+    
+
 
     <table>
-        <tr>
+        <tr class="bg-blue-500 text-white">
             <th>Nombre</th>
             <td>{{persona.nombre}}</td>
         </tr>
@@ -26,3 +40,5 @@
                 
     </table>
 </div>
+</body>
+</html>
