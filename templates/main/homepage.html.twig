@@ -1,0 +1,28 @@
+<h1> HOLAAAAAAAAAAAAAA </h1>
+
+<div>
+    Numero {{pruebadato}}
+
+    {% if pruebadato > 1 %}  {# Esa sentencia es para hacer algo, en este caso estoy haciendo un if#}
+
+        <h1> ADIOOS </h1>
+
+    {% endif %}
+
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <td>{{persona.nombre}}</td>
+        </tr>
+        <tr>
+            <th>Edad</th>
+            <td>{{persona.edad}}</td>
+        </tr>
+        <tr>
+            <th>Ciudad</th>
+            <td>{{persona.ciudad | upper}}</td>
+        </tr>
+        
+                
+    </table>
+</div>
