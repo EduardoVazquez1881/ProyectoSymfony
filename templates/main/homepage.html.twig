@@ -6,10 +6,8 @@
 <div class="bg-white">  <!-- Aquí cambiamos el fondo a blanco -->
     <h1> HOLAAAAAAAAAAAAAA </h1>
     <div>
-        Numero {{pruebadato}}
-
-        {% if pruebadato > 1 %}
-            <h1> ADIOOS </h1>
+        {% if prueba >   1 %}
+            <h1> El dato es {{prueba * 10}} </h1>
         {% endif %}
         
         <div class="bg-blue-500 text-black p-4 border-r-amber-50">
@@ -18,15 +16,24 @@
         <table>
             <tr class="bg-blue-500 text-white">
                 <th>Nombre</th>
-                <td>{{persona.nombre}}</td>
+                <td>{{myShip.id}}</td>
+            </tr>
+            <tr>
+            <tr class="bg-blue-500 text-white">
+                <th>Nombre</th>
+                <td>{{myShip.name}}</td>
             </tr>
             <tr>
                 <th>Edad</th>
-                <td>{{persona.edad}}</td>
+                <td>{{myShip.class}}</td>
             </tr>
             <tr>
                 <th>Ciudad</th>
-                <td>{{persona.ciudad | upper}}</td>
+                <td>{{myShip.captain | upper}}</td>
+            </tr>
+            <tr>
+                <th>Ciudad</th>
+                <td>{{myShip.status | upper}}</td>
             </tr>
         </table>
     </div>
