@@ -1,44 +1,33 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="{{ asset('build/tailwind.css') }}" rel="stylesheet"> {# Es necesario hacer compilacion de esa ruta, en ese caso fue npx tailwindcss -i ./assets/styles/tailwind.css -o ./public/build/tailwind.css --minify #}
-    <title>Inicio</title>
-</head>
-<body>
-<h1> HOLAAAAAAAAAAAAAA </h1>
-
-<div>
-    Numero {{pruebadato}}
-
-    {% if pruebadato > 1 %}  {# Esa sentencia es para hacer algo, en este caso estoy haciendo un if#}
-
-        <h1> ADIOOS </h1>
-
-    {% endif %}
-    <div class="bg-blue-500 text-black p-4 border-r-amber-50" >
-        Este texto tiene el fondo azul y texto blanco de Tailwind.
-    </div>
-    
+{% extends 'base.html.twig' %}
+{% block title %}Homepage{% endblock %}
 
 
-    <table>
-        <tr class="bg-blue-500 text-white">
-            <th>Nombre</th>
-            <td>{{persona.nombre}}</td>
-        </tr>
-        <tr>
-            <th>Edad</th>
-            <td>{{persona.edad}}</td>
-        </tr>
-        <tr>
-            <th>Ciudad</th>
-            <td>{{persona.ciudad | upper}}</td>
-        </tr>
+{% block body %}
+<div class="bg-white">  <!-- Aquí cambiamos el fondo a blanco -->
+    <h1> HOLAAAAAAAAAAAAAA </h1>
+    <div>
+        Numero {{pruebadato}}
+
+        {% if pruebadato > 1 %}
+            <h1> ADIOOS </h1>
+        {% endif %}
         
-                
-    </table>
-</div>
-</body>
-</html>
+        <div class="bg-blue-500 text-black p-4 border-r-amber-50">
+            Este texto tiene el fondo azul y texto blanco de Tailwind.
+        </div>
+        <table>
+            <tr class="bg-blue-500 text-white">
+                <th>Nombre</th>
+                <td>{{persona.nombre}}</td>
+            </tr>
+            <tr>
+                <th>Edad</th>
+                <td>{{persona.edad}}</td>
+            </tr>
+            <tr>
+                <th>Ciudad</th>
+                <td>{{persona.ciudad | upper}}</td>
+            </tr>
+        </table>
+    </div>
+{% endblock %}
