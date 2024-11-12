@@ -1,40 +1,38 @@
-{% extends 'base.html.twig' %}
-{% block title %}Homepage{% endblock %}
+{% extends 'base.html.twig' %} {% block title %}Homepage{% endblock %} {% block
+body %}
+<div class="bg-white">
+  <!-- Aquí cambiamos el fondo a blanco -->
+  <h1>HOLAAAAAAAAAAAAAA</h1>
+  <div>
+    {% if prueba > 1 %}
+    <h1>El dato es {{ prueba * 10 }}</h1>
+    {% endif %}
 
-
-{% block body %}
-<div class="bg-white">  <!-- Aquí cambiamos el fondo a blanco -->
-    <h1> HOLAAAAAAAAAAAAAA </h1>
-    <div>
-        {% if prueba >   1 %}
-            <h1> El dato es {{prueba * 10}} </h1>
-        {% endif %}
-        
-        <div class="bg-blue-500 text-black p-4 border-r-amber-50">
-            Este texto tiene el fondo azul y texto blanco de Tailwind.
-        </div>
-        <table>
-            <tr class="bg-blue-500 text-white">
-                <th>Nombre</th>
-                <td>{{myShip.id}}</td>
-            </tr>
-            <tr>
-            <tr class="bg-blue-500 text-white">
-                <th>Nombre</th>
-                <td>{{myShip.name}}</td>
-            </tr>
-            <tr>
-                <th>Edad</th>
-                <td>{{myShip.class}}</td>
-            </tr>
-            <tr>
-                <th>Ciudad</th>
-                <td>{{myShip.captain | upper}}</td>
-            </tr>
-            <tr>
-                <th>Ciudad</th>
-                <td>{{myShip.status | upper}}</td>
-            </tr>
-        </table>
+    <div class="bg-blue-500 text-black p-4 border-r-amber-50">
+      Este texto tiene el fondo azul y texto blanco de Tailwind.
     </div>
+    <table>
+      <tr class="bg-blue-500 text-white">
+        <th>Nombre</th>
+        <td>
+          <a href="{{ path('app_starships_show', { id: myShip.id }) }}">{{
+            myShip.name
+          }}</a>
+        </td>
+      </tr>
+      <tr>
+        <th>Clase</th>
+        <td>{{ myShip.class }}</td>
+      </tr>
+      <tr>
+        <th>Capitán</th>
+        <td>{{ myShip.captain | upper }}</td>
+      </tr>
+      <tr>
+        <th>Estado</th>
+        <td>{{ myShip.status | upper }}</td>
+      </tr>
+    </table>
+  </div>
+</div>
 {% endblock %}
