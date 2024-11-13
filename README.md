@@ -13,6 +13,8 @@ symfony new nombre_proyecto --webapp
 - composer require debug
 - composer require doctrine
 - composer require symfony/security-bundle
+- composer require symfony/form
+
 
 -- Servicios:
 php bin/console debug:autowiring
