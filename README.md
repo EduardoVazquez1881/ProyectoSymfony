@@ -66,3 +66,8 @@ npx tailwindcss -i ./assets/styles/tailwind.css -o ./public/build/tailwind.css -
 
 ProyectoName/templates/base.html.twig
 <link href="{{ asset('build/tailwind.css') }}" rel="stylesheet">
+
+<h1>Nuevas rutas</h1>
+
+Para crear nuevas rutas es necesario crear un nuevo archivo o carpeta en src/Controller/ ya que será en donde controlaremos las vistas las cuales las crearemos en templates/
+
