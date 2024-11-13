@@ -41,7 +41,7 @@ composer install --- Se utiliza para cargar las dependencias de un proyecto
 
 @tailwind utilities;
 
-- Taildwind.config.js
+Taildwind.config.js
 
 
   module.exports = {
