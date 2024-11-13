@@ -34,8 +34,11 @@ composer install --- Se utiliza para cargar las dependencias de un proyecto
 - npx tailwindcss init
 
 #ROUTE: ProyectoName/assets/styles/tailwind.css
+
 @tailwind base;
+
 @tailwind components;
+
 @tailwind utilities;
 
 - Taildwind.config.js
