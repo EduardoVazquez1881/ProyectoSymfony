@@ -42,7 +42,9 @@ composer install --- Se utiliza para cargar las dependencias de un proyecto
 @tailwind utilities;
 
 - Taildwind.config.js
-module.exports = {
+
+<p>
+  module.exports = {
   content: [ './templates/**/*.html.twig',],
   theme: {
     extend: {},
@@ -50,6 +52,7 @@ module.exports = {
   plugins: [],
 }
 
+</p>
 - Compilar
 npx tailwindcss -i ./assets/styles/tailwind.css -o ./public/build/tailwind.css --watch
 
