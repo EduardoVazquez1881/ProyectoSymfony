@@ -121,6 +121,7 @@
 {% block title %}Título{% endblock %}
 {% block body %}Contenido{% endblock %}
 </code></pre>
+<p>De esa forma tendremos que poner {% block %} {% endblock %} para ir haciendo la estructura ya sea para tittle, body, javascripts, stylesheets, etc.</p>
 
 <h2 id="nuevas-rutas">Nuevas Rutas</h2>
 <p>Para crear nuevas rutas, agrega archivos en la carpeta <code>src/Controller/</code>, y coloca las vistas correspondientes en <code>templates/</code>.</p>
