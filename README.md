@@ -67,7 +67,7 @@ npx tailwindcss -i ./assets/styles/tailwind.css -o ./public/build/tailwind.css -
 ProyectoName/templates/base.html.twig
 
 En esa ruta se agregará el link ya que al ser la base de nuestras plantillas, todas las incluirán 
-<link href="{{ asset('build/tailwind.css') }}" rel="stylesheet">
+<href="{{ asset('build/tailwind.css') }}" rel="stylesheet">
 
 <h1>Nuevas rutas</h1>
 
