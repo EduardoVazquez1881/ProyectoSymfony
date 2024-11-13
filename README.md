@@ -52,6 +52,8 @@
 <h2 id="servicios">Servicios</h2>
 <p>Para ver una lista de los servicios y dependencias disponibles en el contenedor de Symfony:</p>
 <pre><code>php bin/console debug:autowiring</code></pre>
+<pre><code>php bin/console debug:container</code></pre>
+
 
 <h2 id="comandos">Comandos</h2>
 
