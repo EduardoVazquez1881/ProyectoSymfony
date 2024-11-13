@@ -28,7 +28,9 @@ composer install --- Se utiliza para cargar las dependencias de un proyecto
 
 <h1>Tailwind</h1>
 --Descargas
+
 - npm install -D tailwindcss
+  
 - npx tailwindcss init
 
 #ROUTE: ProyectoName/assets/styles/tailwind.css
