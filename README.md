@@ -4,6 +4,8 @@ Instalaciones:
 symfony new nombre_proyecto --full
 - Instalacion basica
 symfony new nombre_proyecto --webapp
+- npm init -y
+
 
 -- Require:
 - composer require twig
@@ -23,3 +25,28 @@ composer install --- Se utiliza para cargar las dependencias de un proyecto
 - composer require nombre_archivo
 - php bin/console debug:router ((Conocer las consultas get y post que se tienen actualmente)
 - dd(dato_seleccionado); -- Para saber si se estan enviando datos
+
+<h1>Tailwind</h1>
+--Descargas
+- npm install -D tailwindcss
+- npx tailwindcss init
+
+#ROUTE: ProyectoName/assets/styles/tailwind.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+- Taildwind.config.js
+module.exports = {
+  content: [ './templates/**/*.html.twig',],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+- Compilar
+npx tailwindcss -i ./assets/styles/tailwind.css -o ./public/build/tailwind.css --watch
+
+ProyectoName/templates/base.html.twig
+<link href="{{ asset('build/tailwind.css') }}" rel="stylesheet">
